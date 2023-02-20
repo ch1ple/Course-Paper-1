@@ -23,7 +23,6 @@ public class Employee {
     public int getSalary() {
         return salary;
     }
-
     public void setDepartment(int department) {
         if (department < 0) {
             throw new IllegalArgumentException("Номер отдела не может бьыть отрицательным");

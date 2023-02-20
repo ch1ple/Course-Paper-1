@@ -10,7 +10,7 @@ public class Main {
     }
     public static void getTotalSalary() {
         int totalSalary = 0;
-        int avgSalary;
+        double avgSalary;
         int numbersOfEmployeers = 0;
         for (int i = 0; i < employees.length; i++) {
             if (employees[i] != null) {
@@ -61,6 +61,7 @@ public class Main {
         for (int i = 0; i < employees.length; i++) {
             if (employees[i] != null) {
                 finalSalary = employees[i].getSalary() * indexSalary / 100;
+                employees[i].setSalary(finalSalary);
                 System.out.println((i + 1) + ". " + finalSalary + " руб.");
             }
         }
@@ -100,7 +101,7 @@ public class Main {
 
     public static void countTotalSalaryInTheDepartment(int departmentNumber) {
         int totalSalary = 0;
-        int avgSalary;
+        double avgSalary;
         int numbersOfEmployeers = 0;
         for (int i = 0; i < employees.length; i++) {
             if (employees[i] != null && employees[i].getDepartment() == departmentNumber) {
@@ -119,6 +120,7 @@ public class Main {
         for (int i = 0; i < employees.length; i++) {
             if (employees[i] != null && employees[i].getDepartment() == departmentNumber) {
                 finalSalary = employees[i].getSalary() * indexSalaryInTheDepartment / 100;
+                employees[i].setSalary(finalSalary);
                 System.out.println((i + 1) + ". " + finalSalary + " руб.");
             }
         }
