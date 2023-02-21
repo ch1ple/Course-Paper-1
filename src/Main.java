@@ -18,7 +18,7 @@ public class Main {
                 numbersOfEmployeers = numbersOfEmployeers + 1;
             }
         }
-        avgSalary = totalSalary / numbersOfEmployeers;
+        avgSalary = (double) totalSalary / numbersOfEmployeers;
         System.out.println("Сумма затрат на зарплаты в месяц составляет - " + totalSalary + " руб.");
         System.out.println("Среднее значение зарплат составляет - " + avgSalary + " руб.");
     }
@@ -109,7 +109,7 @@ public class Main {
                 numbersOfEmployeers = numbersOfEmployeers + 1;
             }
         }
-        avgSalary = totalSalary / numbersOfEmployeers;
+        avgSalary = (double) totalSalary / numbersOfEmployeers;
         System.out.println("Сумма затрат на зарплаты в месяц составляет - " + totalSalary + " руб.");
         System.out.println("Среднее значение зарплат составляет - " + avgSalary + " руб.");
     }
